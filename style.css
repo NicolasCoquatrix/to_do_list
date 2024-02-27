@@ -1,0 +1,92 @@
+:root {
+    --color_white: #EFEFEF;
+    /* var(--color_white) */
+    --color_black: #222222;
+    /* var(--color_black) */
+    --color_main: #BCAB79;
+    /* var(--color_main) */
+    --color_main_light: #DDD4BB;
+    /* var(--color_main_light) */
+    --color_main_dark: #A38F52;
+    /* var(--color_main_dark) */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: var(--color_main_dark);
+    color: var(--color_white);
+  }
+
+body {
+    background-color: var(--color_main_light);
+}
+
+.navbar {
+    background-color: var(--color_main);
+}
+
+.col-12, .col-xl-4 {
+    padding: 0;
+}
+
+.card, .card-header {
+    border-color: var(--color_main_dark);
+    background-color: var(--color_main);
+}
+
+.form-control {
+    border-color: var(--color_main_dark);
+    background-color: var(--color_main_light);
+}
+
+.form-control:focus {
+    border-color: var(--color_main_dark);
+    background-color: var(--color_main_light);
+    box-shadow: 0 0 0 0.25rem var(--color_main_dark);
+}
+
+.btn, .btn:hover, .btn:active {
+    border-color: var(--color_main_light);
+    background-color: var(--color_main_dark);
+    color: var(--color_white);
+}
+.btn:hover{
+    filter: brightness(110%);
+}
+
+.required-field {
+    box-shadow: 0 0 0 0.25rem var(--color_main_light);
+}
+
+.task {
+    background-color: var(--color_main_light);
+    min-width: 100px;
+    cursor: grab;
+}
+
+.button-icon {
+    height: 10px;
+}
+
+.delete-icon {
+    height: 20px;
+}
+
+.dragging {
+    opacity: 50%;
+    transition: none;
+}
+
+.wording{
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.wording-box {
+    overflow: hidden;
+    word-wrap: break-word;
+    width: 100%;
+}
